@@ -19,9 +19,13 @@ for line in Lines:
         break
     if i>0:
         words = line.split(' ')
-        sequence = words[4]
+        if words[0]=='From':
+            sequence = words[2]
+        else:
+            sequence = words[4]
         pair = sequence.split('=')
         sNumber = int(pair[1])
+
         diff = sNumber-prev
         if diff>1:
             totalMiss=totalMiss+diff-1
