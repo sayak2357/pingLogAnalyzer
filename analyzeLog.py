@@ -40,6 +40,6 @@ for line in Lines:
     i+=1
 print('totoal icmp packet misses = ',totalMiss,' packets')
 print('longest miss = ',longestMiss,' packets')
-print('longest miss started with icmp packet number = ',missStart,' and ended with packet number = ',missEnd)
+print('longest miss started with icmp packet number = ',missStart+1,' and ended with packet number = ',missEnd-1)
 
 
