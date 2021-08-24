@@ -5,7 +5,7 @@ Lines = logFile.readlines()
 
 count=int(input("how many lines, from start, to analyze (give 0 for full analysis)? : "))
 i=0
-prev=1
+prev=0
 longestMiss=float("-inf")
 totalMiss=0
 sequence_stream=[]
